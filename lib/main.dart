@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:appwrite/appwrite.dart';
 
 void main() {
+  Client client = Client();
+  client
+      .setEndpoint('https://cloud.appwrite.io/v1')
+      .setProject('65d64cc09209111d115d')
+      .setSelfSigned(
+          status:
+              true); // For self signed certificates, only use for development
+
   runApp(const MyApp());
 }
 
