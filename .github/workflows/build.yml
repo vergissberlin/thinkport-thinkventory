@@ -17,12 +17,6 @@ jobs:
           channel: 'stable' # or: 'beta', 'dev', 'master' (or 'main')
       - run: flutter --version
 
-      - name: Run ATS
-        uses: codecov/codecov-ats@v0
-        env:
-          CODECOV_STATIC_TOKEN: ${{ secrets.CODECOV_STATIC_TOKEN }}
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-          
       - name: Install dependencies
         run: flutter pub get
 
@@ -39,5 +33,4 @@ jobs:
           verbose: true
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: vergissberlin/thinkport-thinkventory
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage/lcov.info
