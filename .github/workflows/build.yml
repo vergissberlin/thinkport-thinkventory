@@ -34,3 +34,8 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: vergissberlin/thinkport-thinkventory
           file: coverage/lcov.info
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@v2.2.3
+        with:
+          file: coverage/lcov.info
+    
