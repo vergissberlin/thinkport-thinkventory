@@ -1,16 +1,12 @@
 # thinkventory
 
-A new Flutter project.
+[![codecov](https://codecov.io/gh/vergissberlin/thinkport-thinkventory/graph/badge.svg?token=9ndoJfFxmO)](https://codecov.io/gh/vergissberlin/thinkport-thinkventory)
 
-## Getting Started
+Inventory app.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Development
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Coder coverage report
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Coder Coverage Report](https://codecov.io/gh/vergissberlin/thinkport-thinkventory/graphs/sunburst.svg?token=9ndoJfFxmO)
